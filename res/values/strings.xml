@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title_activity_main">Safe</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_place">PlaceActivity</string>
+    <string name="title_activity_report">Denúncia</string>
+    <string name="title_activity_edit_profile">Editar Perfil</string>
+    <string name="title_activity_friends">Seguidores</string>
+    <string name="title_activity_profile">Perfil</string>
+    <string name="title_activity_all_reports">Todas as Denúncias</string>
+    <string name="app_name">Safe</string>
+    <string name="drawer_open">Abrir menu</string>
+    <string name="drawer_close">Fechar menu</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="signInButton">Inscreva-se usando o e-mail</string>
+    <string name="facebookButton">Continuar com o Facebook</string>
+    <string name="facebookEnterButton">Entrar com o Facebook</string>
+    <string name="googleButton">Continuar com o Google</string>
+    <string name="googleEnterButton">Entrar com o Google</string>
+    <string name="entrar">Já tem uma conta? </string>
+    <string name="entrarBold">Entrar</string>
+    <string name="app_id">343112249186948</string>
+    <string name="app_key">AIzaSyCw8e-73QNfFQPXaqnNsv6i6lI0cfVrGMg</string>
+    <string name="moreReports">Mais denúncias</string>
+    <string name="contentImage">Imagem da denúncia</string>
+    <string name="noReports">Nenhuma denúncia encontrada</string>
+
+    <!-- Menu -->
+    <string name="addReport">Adicionar Denúncia</string>
+
+    <!-- Dialog Login -->
+    <string name="emailHint">E-mail</string>
+    <string name="passwordHint">Senha</string>
+    <string name="firstNameHint">Nome</string>
+    <string name="lastNameHint">Sobrenome</string>
+    <string name="enterButton">Entrar</string>
+    <string name="registerButton">Inscreva-se</string>
+    <string name="genderMan">Masculino</string>
+    <string name="genderWoman">Feminino</string>
+    <string name="fieldRequired">Campo Obrigatório</string>
+
+    <!-- Profile -->
+    <string name="following">SEGUIDORES</string>
+    <string name="followers">SEGUINDO</string>
+    <string name="reports">DENÚNCIAS</string>
+    <string name="trophies">TROFÉUS</string>
+    <string name="collection">MINHA COLEÇÃO</string>
+    <string name="report_recents">DENÚNCIAS RECENTES</string>
+    <string name="settings">Configurações</string>
+    <string name="follow">Seguir</string>
+    <string name="unfollow">Deixar de Seguir</string>
+
+    <!-- Settings -->
+    <string name="logout">Sair</string>
+    <string name="editProfile">Editar Perfil</string>
+    <string name="saveChanges">Salvar Alterações</string>
+    <string name="changePhoto">Alterar Foto</string>
+    <string name="name">Nome</string>
+    <string name="biografy">Biografia</string>
+    <string name="phone">Telefone</string>
+    <string name="gender">Sexo</string>
+    <string name="about">Sobre</string>
+    
+    <string name="aboutText1">Aplicativo desenvolvido por Paulo Menezes</string>
+    <string name="aboutText2">Contato: paulo.hgmenezes@gmail.com</string>
+    <string name="aboutText3">Projeto desenvolvido para o concurso INOVApps</string>
+    <string name="aboutText4">Todo conteúdo, seja ele veiculado publicamente ou anonimamente, é de exclusiva responsabilidade da pessoa que o originou. O Safe não pode garantir a autencidade de qualquer Conteúdo ou dados que os usuários fornecem sobre si mesmos.</string>
+
+    <!-- Add Report -->
+    <string name="placeHint">Selecione um local</string>
+    <string name="titleHint">Título da denúncia</string>
+    <string name="descriptionHint">Descrição, fale mais sobre sua denúncia</string>
+    <string name="addPhotos">Adicionar fotos</string>
+    <string name="addPlace">Adicionar local</string>
+    <string name="noAnonymous">Não adicionar como anônimo</string>
+    <string name="anonymous">Adicionar como anônimo</string>
+    <string name="title_activity_place_select">Selecione um local</string>
+    <string name="msgAddPhoto">Após adicionar a denúncia você pode enviar fotos</string>
+    <string name="tipSelectPlace">Selecione algum local para adicionar uma denúncia</string>
+    <string name="tipSelectPlaceWithResult">Nenhum resultado encontado</string>
+    <string name="addPlaceButton">Não achou um local? Adicione!</string>
+    <string name="cityHint">Cidade</string>
+    <string name="addressHint">Endereço</string>
+    <string name="namePlaceHint">Nome do local</string>
+    <string name="phoneHint">Telefone</string>
+
+    <string-array name="report_type">
+        <item>Higiene do local</item>
+        <item>Higiene dos funcionários</item>
+        <item>Higiene dos produtos</item>
+        <item>Funcionários sem fardamento</item>
+        <item>Produto vencido</item>
+        <item>Produto estragado</item>
+        <item>Produto mal armazenado</item>
+        <item>Temperatura inadequada</item>
+        <item>Problemas com embalagem</item>
+        <item>Problemas com equipamentos</item>
+        <item>Outros</item>
+    </string-array>
+    <string-array name="report_category">
+        <item>Supermercado</item>
+        <item>Mercadinho</item>
+        <item>Mercado</item>
+        <item>Restaurante</item>
+        <item>Lanchonete</item>
+        <item>Pizzaria</item>
+        <item>Bar</item>
+        <item>Espetinho</item>
+        <item>Boate</item>
+    </string-array>
+
+    <!-- Place Screen -->
+    <string name="title_photos">FOTOS RECENTES</string>
+    <string name="comments">COMENTÁRIOS</string>
+    <string name="likes">GOSTARAM</string>
+    <string name="photos">FOTOS</string>
+    <string name="confirmed">CONFIRMARAM</string>
+    <string name="some_comments">COMENTÁRIOS RECENTES</string>
+    <string name="more_reports">MAIS DENÚNCIAS DESSE LOCAL</string>
+    <string name="title_place">LOCAL</string>
+    <string name="title_user">ADICIONADO POR</string>
+    <string name="addPhoto">Adicionar foto</string>
+    <string name="confirm">Confirmar denúncia</string>
+    <string name="like">Gostei daqui</string>
+    <string name="confirmMsg">Você confirma essa denúncia?</string>
+    <string name="confirmYes">Sim, eu confirmo</string>
+    <string name="confirmNo">Não</string>
+    <string name="likeMsg">Você confirma seu gostei?</string>
+    <string name="likeYes">Sim, eu confirmo</string>
+    <string name="photosNoResult">Nenhuma foto adicionada</string>
+    <string name="commentNoResult">Nenhum comentário adicionado</string>
+    <string name="moreNoResult">Nenhuma outra denúncia nesse local</string>
+    <string name="addComment">Adicionar comentário</string>
+    <string name="viewComments">Ver todos os comentários</string>
+    <string name="error_place">Houve um erro ao carregar o local</string>
+    <string name="error_user">Houve um erro ao carregar o usuário</string>
+    <string name="error_photos">Houve um erro ao carregar as fotos</string>
+    <string name="commentHint">Escreva seu comentário</string>
+
+    <!-- Tips -->
+    <string name="addTip">Adicionar Dica</string>
+    <string name="tipHint">Escreva sua dica</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

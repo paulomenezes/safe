@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout 
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:tools="http://schemas.android.com/tools"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="#eeeeee"
+	    android:orientation="vertical">
+	    <LinearLayout 
+	        android:id="@+id/editProfile"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:background="@drawable/card_background"
+			android:layout_marginLeft="6dp"
+			android:layout_marginRight="6dp"
+			android:layout_marginTop="4dp"
+			android:layout_marginBottom="4dp"
+	        android:padding="10dp" >
+	        <RelativeLayout 
+	            android:layout_width="100dp"
+	            android:layout_height="100dp"
+	            android:layout_marginEnd="10dp">
+		        <ImageView 
+			        android:layout_width="100dp"
+			        android:layout_height="100dp"
+			        android:background="@drawable/photo_background"
+			        android:id="@+id/photo" />
+		        <TextView 
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:textColor="#FFF"
+		            android:textSize="@dimen/text_32"
+		            android:gravity="center"
+		            android:id="@+id/photo_name" />
+	        </RelativeLayout>
+	        <LinearLayout 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical">
+	            <TextView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:id="@+id/name" />
+	            
+	            <TextView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="@color/blue"
+	                android:textSize="@dimen/text_12"
+	                android:layout_marginTop="10dp"
+	                android:id="@+id/biografy" />
+	            
+	            <TextView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="@color/edit_text"
+	                android:textSize="@dimen/text_12"
+	                android:layout_marginTop="10dp"
+	                android:id="@+id/phone" />
+	        </LinearLayout>
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:background="@drawable/card_background"
+			android:layout_marginLeft="6dp"
+			android:layout_marginRight="6dp"
+			android:layout_marginTop="4dp"
+			android:layout_marginBottom="4dp"
+			android:padding="0dp">
+	        <TableLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:stretchColumns="*">
+	            <TableRow>
+	                <LinearLayout 
+	                    android:id="@+id/followingLayout"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:orientation="vertical">
+		                <ProgressBar 
+		                    android:id="@+id/followingLoading"
+		                    android:layout_width="fill_parent"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginTop="10dp"
+		                    android:layout_marginBottom="10dp"/>
+		                <TextView 
+		                    android:visibility="gone"
+		                    android:layout_width="fill_parent"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginTop="10dp"
+		                    android:layout_marginBottom="10dp"
+		                    android:textSize="@dimen/text_32"
+		                    android:gravity="center"
+		                    android:id="@+id/following" />
+		                <TextView 
+		                    android:layout_width="fill_parent"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginBottom="10dp"
+		                    android:text="@string/following"
+		                    android:textColor="@color/edit_text"
+		                    android:gravity="center" />
+		            </LinearLayout>
+		            <LinearLayout 
+		                android:id="@+id/followersLayout"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:orientation="vertical">
+		                <ProgressBar 
+		                    android:id="@+id/followersLoading"
+		                    android:layout_width="fill_parent"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginTop="10dp"
+		                    android:layout_marginBottom="10dp"/>
+		                <TextView 
+		                    android:visibility="gone"
+		                    android:layout_width="fill_parent"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginTop="10dp"
+		                    android:layout_marginBottom="10dp"
+		                    android:textSize="@dimen/text_32"
+		                    android:gravity="center"
+		                    android:id="@+id/followers" />
+		                <TextView 
+		                    android:layout_width="fill_parent"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginBottom="10dp"
+		                    android:text="@string/followers"
+		                    android:textColor="@color/edit_text"
+		                    android:gravity="center" />
+		            </LinearLayout>
+		            <LinearLayout 
+		                android:id="@+id/reportsLayout"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:orientation="vertical">
+		                <ProgressBar 
+		                    android:id="@+id/reportsLoading"
+		                    android:layout_width="fill_parent"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginTop="10dp"
+		                    android:layout_marginBottom="10dp"/>
+		                <TextView 
+		                    android:visibility="gone"
+		                    android:layout_width="fill_parent"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginTop="10dp"
+		                    android:layout_marginBottom="10dp"
+		                    android:textSize="@dimen/text_32"
+		                    android:gravity="center"
+		                    android:id="@+id/reports" />
+		                <TextView 
+		                    android:layout_width="fill_parent"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginBottom="10dp"
+		                    android:text="@string/reports"
+		                    android:textColor="@color/edit_text"
+		                    android:gravity="center" />
+		            </LinearLayout>
+	            </TableRow>	            
+	        </TableLayout>
+	        <View 
+	            android:layout_width="fill_parent"
+	            android:layout_height="1dp"
+	            android:background="@drawable/line" />
+	        <TableLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:stretchColumns="*">
+	            <TableRow>
+	                <LinearLayout 
+	                    android:id="@+id/trophiesLayout"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:orientation="vertical">
+		                <TextView 
+		                    android:layout_width="fill_parent"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginTop="10dp"
+		                    android:layout_marginBottom="10dp"
+		                    android:textSize="@dimen/text_22"
+		                    android:gravity="center"
+		                    android:id="@+id/trophies" />
+		                <TextView 
+		                    android:layout_width="fill_parent"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginBottom="10dp"
+		                    android:text="@string/trophies"
+		                    android:textColor="@color/edit_text"
+		                    android:gravity="center" />
+		            </LinearLayout>
+		            <LinearLayout 
+		                android:id="@+id/collectionLayout"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:orientation="vertical">
+		                <ProgressBar 
+		                    android:id="@+id/collectionLoading"
+		                    android:layout_width="fill_parent"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginTop="10dp"
+		                    android:layout_marginBottom="10dp"/>
+		                <TextView 
+		                    android:visibility="gone"
+		                    android:layout_width="fill_parent"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginTop="10dp"
+		                    android:layout_marginBottom="10dp"
+		                    android:textSize="@dimen/text_22"
+		                    android:gravity="center"
+		                    android:id="@+id/collection" />
+		                <TextView 
+		                    android:layout_width="fill_parent"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginBottom="10dp"
+		                    android:text="@string/collection"
+		                    android:textColor="@color/edit_text"
+		                    android:gravity="center" />
+		            </LinearLayout>
+	            </TableRow>	            
+	        </TableLayout>
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:paddingBottom="10dp"
+	        android:background="@drawable/card_background"
+			android:layout_marginLeft="6dp"
+			android:layout_marginRight="6dp"
+			android:layout_marginTop="4dp"
+			android:layout_marginBottom="4dp"
+			android:padding="0dp">
+            <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/report_recents" />
+	        <View 
+	            android:layout_width="fill_parent"
+	            android:layout_height="1dp"
+	            android:background="@drawable/line" />
+	        
+		    <ProgressBar 
+		        android:id="@+id/reportLoading"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+		        android:layout_marginBottom="10dp"/>
+		    
+		    <TextView 
+		        android:visibility="gone"
+		        android:id="@+id/reportMsg"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+		        android:layout_marginBottom="10dp"
+		        android:text="@string/noReports"
+		        android:gravity="center" />
+		   	
+		    <ListView 
+		        android:id="@+id/listReports"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content" />
+	        
+	    </LinearLayout>
+    </LinearLayout>

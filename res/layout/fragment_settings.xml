@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <menezes.dd.processbutton.FlatButton
+	    android:id="@+id/editProfile"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginBottom="10dp"
+	    android:text="@string/editProfile"
+	    android:textColor="@color/white_color"
+	    android:textSize="14sp"
+	    custom:pb_colorNormal="@color/blue"
+	    custom:pb_colorPressed="@color/blue_hover" />
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line" />
+    
+    <menezes.dd.processbutton.FlatButton
+	    android:id="@+id/about"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginBottom="10dp"
+	    android:text="@string/about"
+	    android:textColor="@color/white_color"
+	    android:textSize="14sp"
+	    custom:pb_colorNormal="@color/google"
+	    custom:pb_colorPressed="@color/googleHover" />
+    
+    <menezes.dd.processbutton.FlatButton
+	    android:id="@+id/logout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginBottom="10dp"
+	    android:text="@string/logout"
+	    android:textColor="@color/white_color"
+	    android:textSize="14sp"
+	    custom:pb_colorNormal="@color/blue"
+	    custom:pb_colorPressed="@color/blue_hover" />
+
+</LinearLayout>

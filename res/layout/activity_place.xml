@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee">
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content" 
+	    android:orientation="vertical">
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:background="@drawable/card_background"
+			android:layout_marginLeft="6dp"
+			android:layout_marginRight="6dp"
+			android:layout_marginTop="4dp"
+			android:layout_marginBottom="4dp"
+	        android:padding="10dp" >
+	        <RelativeLayout 
+	            android:layout_width="100dp"
+	            android:layout_height="100dp"
+	            android:layout_marginEnd="10dp">
+		        <ImageView 
+			        android:layout_width="100dp"
+			        android:layout_height="100dp"
+			        android:background="@drawable/photo_background"
+			        android:id="@+id/photo" />
+	        </RelativeLayout>
+	        <LinearLayout 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical">
+	            <TextView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:id="@+id/name" />
+	            
+	            <TextView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="@color/blue"
+	                android:textSize="@dimen/text_12"
+	                android:layout_marginTop="10dp"
+	                android:id="@+id/address" />
+	            
+	            <TextView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="@color/edit_text"
+	                android:textSize="@dimen/text_12"
+	                android:layout_marginTop="10dp"
+	                android:id="@+id/city" />
+	            
+	            <TextView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="@color/edit_text"
+	                android:textSize="@dimen/text_12"
+	                android:layout_marginTop="10dp"
+	                android:id="@+id/phone" />
+	        </LinearLayout>
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:background="@drawable/card_background"
+			android:layout_marginLeft="6dp"
+			android:layout_marginRight="6dp"
+			android:layout_marginTop="4dp"
+			android:layout_marginBottom="4dp"
+			android:padding="0dp">
+	        <TableLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:stretchColumns="*">
+	            <TableRow>
+	                <LinearLayout 
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:orientation="vertical">
+		                <ProgressBar 
+		                    android:id="@+id/commentsLoading"
+		                    android:layout_width="fill_parent"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginTop="10dp"
+		                    android:layout_marginBottom="10dp"/>
+		                <TextView 
+		                    android:visibility="gone"
+		                    android:layout_width="fill_parent"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginTop="10dp"
+		                    android:layout_marginBottom="10dp"
+		                    android:textSize="@dimen/text_32"
+		                    android:gravity="center"
+		                    android:id="@+id/comments" />
+		                <TextView 
+		                    android:layout_width="fill_parent"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginBottom="10dp"
+		                    android:text="@string/comments"
+		                    android:textColor="@color/edit_text"
+		                    android:gravity="center" />
+		            </LinearLayout>
+		            <LinearLayout 
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:orientation="vertical">
+		                <ProgressBar 
+		                    android:id="@+id/confirmedLoading"
+		                    android:layout_width="fill_parent"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginTop="10dp"
+		                    android:layout_marginBottom="10dp"/>
+		                <TextView 
+		                    android:visibility="gone"
+		                    android:layout_width="fill_parent"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginTop="10dp"
+		                    android:layout_marginBottom="10dp"
+		                    android:textSize="@dimen/text_32"
+		                    android:gravity="center"
+		                    android:id="@+id/confirmed" />
+		                <TextView 
+		                    android:layout_width="fill_parent"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginBottom="10dp"
+		                    android:text="@string/likes"
+		                    android:textColor="@color/edit_text"
+		                    android:gravity="center" />
+		            </LinearLayout>
+		            <LinearLayout 
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:orientation="vertical">
+		                <ProgressBar 
+		                    android:id="@+id/photosLoading"
+		                    android:layout_width="fill_parent"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginTop="10dp"
+		                    android:layout_marginBottom="10dp"/>
+		                <TextView 
+		                    android:visibility="gone"
+		                    android:layout_width="fill_parent"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginTop="10dp"
+		                    android:layout_marginBottom="10dp"
+		                    android:textSize="@dimen/text_32"
+		                    android:gravity="center"
+		                    android:id="@+id/photos" />
+		                <TextView 
+		                    android:layout_width="fill_parent"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginBottom="10dp"
+		                    android:text="@string/photos"
+		                    android:textColor="@color/edit_text"
+		                    android:gravity="center" />
+		            </LinearLayout>
+	            </TableRow>	            
+	        </TableLayout>
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:paddingBottom="10dp"
+	        android:background="@drawable/card_background"
+			android:layout_marginLeft="6dp"
+			android:layout_marginRight="6dp"
+			android:layout_marginTop="4dp"
+			android:layout_marginBottom="4dp"
+			android:padding="0dp">
+            <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/title_photos" />
+	        <View 
+	            android:layout_width="fill_parent"
+	            android:layout_height="1dp"
+	            android:background="@drawable/line" />
+	        
+		    <ProgressBar 
+		        android:id="@+id/photoLoading"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+		        android:layout_marginBottom="10dp"/>
+		    <TextView 
+		        android:visibility="gone"
+		        android:id="@+id/photoMsg"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+		        android:layout_marginBottom="10dp"
+		        android:text="@string/photosNoResult"
+		        android:gravity="center" />
+		    
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:id="@+id/photoView">
+		        
+		    </LinearLayout>
+	        
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:paddingBottom="10dp"
+	        android:background="@drawable/card_background"
+			android:layout_marginLeft="6dp"
+			android:layout_marginRight="6dp"
+			android:layout_marginTop="4dp"
+			android:layout_marginBottom="4dp"
+			android:padding="0dp">
+            <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/title_user" />
+	        <View 
+	            android:layout_width="fill_parent"
+	            android:layout_height="1dp"
+	            android:background="@drawable/line" />
+	        
+		    <ProgressBar 
+		        android:id="@+id/userLoading"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+		        android:layout_marginBottom="10dp"/>
+		    <TextView 
+		        android:visibility="gone"
+		        android:id="@+id/userMsg"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+		        android:layout_marginBottom="10dp"
+		        android:text="@string/error_user"
+		        android:gravity="center" />
+		    
+	        <LinearLayout 
+	            android:id="@+id/user"
+	            android:visibility="gone"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="10dp" >
+		        <RelativeLayout 
+		            android:layout_width="100dp"
+		            android:layout_height="100dp"
+		            android:layout_marginEnd="10dp">
+			        <ImageView 
+				        android:layout_width="100dp"
+				        android:layout_height="100dp"
+				        android:background="@drawable/photo_background"
+				        android:id="@+id/userPhoto" />
+			        <TextView 
+			            android:layout_width="fill_parent"
+			            android:layout_height="fill_parent"
+			            android:textColor="#FFF"
+			            android:textSize="@dimen/text_32"
+			            android:gravity="center"
+			            android:id="@+id/userPhotoName" />
+		        </RelativeLayout>
+		        <LinearLayout 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:orientation="vertical">
+		            <TextView 
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:id="@+id/userName" />
+		            
+		            <TextView 
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:textColor="@color/blue"
+		                android:textSize="@dimen/text_12"
+		                android:layout_marginTop="10dp"
+		                android:id="@+id/userBiografy" />
+		            
+		            <TextView 
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:textColor="@color/edit_text"
+		                android:textSize="@dimen/text_12"
+		                android:layout_marginTop="10dp"
+		                android:id="@+id/userPhone" />
+		        </LinearLayout>
+		    </LinearLayout>
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:paddingBottom="10dp"
+	        android:background="@drawable/card_background"
+			android:layout_marginLeft="6dp"
+			android:layout_marginRight="6dp"
+			android:layout_marginTop="4dp"
+			android:layout_marginBottom="4dp"
+			android:padding="0dp">
+            <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/some_comments" />
+	        <View 
+	            android:layout_width="fill_parent"
+	            android:layout_height="1dp"
+	            android:background="@drawable/line" />
+	        
+		    <ProgressBar 
+		        android:id="@+id/commentLoading"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+		        android:layout_marginBottom="10dp"/>
+		    <TextView 
+		        android:visibility="gone"
+		        android:id="@+id/commentMsg"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+		        android:layout_marginBottom="10dp"
+		        android:text="@string/commentNoResult"
+		        android:gravity="center" />
+		   	
+		    <LinearLayout 
+		        android:id="@+id/listComments"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical">
+		        
+		    </LinearLayout>
+		    
+	        <View 
+	            android:layout_width="fill_parent"
+	            android:layout_height="1dp"
+	            android:background="@drawable/line" />
+	        
+		    <menezes.dd.processbutton.FlatButton
+			    android:id="@+id/addComment"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_margin="10dp"
+			    android:text="@string/addComment"
+			    android:textColor="@color/white_color"
+			    android:textSize="14sp"
+			    custom:pb_colorNormal="@color/facebook"
+			    custom:pb_colorPressed="@color/facebookHover" />
+	        
+		    <menezes.dd.processbutton.FlatButton
+		        android:visibility="gone"
+			    android:id="@+id/viewComments"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginLeft="10dp"
+			    android:layout_marginRight="10dp"
+			    android:layout_marginBottom="10dp"
+			    android:text="@string/viewComments"
+			    android:textColor="@color/white_color"
+			    android:textSize="14sp"
+			    custom:pb_colorNormal="@color/google"
+			    custom:pb_colorPressed="@color/googleHover" />
+	        
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:paddingBottom="10dp"
+	        android:background="@drawable/card_background"
+			android:layout_marginLeft="6dp"
+			android:layout_marginRight="6dp"
+			android:layout_marginTop="4dp"
+			android:layout_marginBottom="4dp"
+			android:padding="0dp">
+            <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/more_reports" />
+	        <View 
+	            android:layout_width="fill_parent"
+	            android:layout_height="1dp"
+	            android:background="@drawable/line" />
+	        
+		    <ProgressBar 
+		        android:id="@+id/moreLoading"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+		        android:layout_marginBottom="10dp"/>
+		    <TextView 
+		        android:visibility="gone"
+		        android:id="@+id/moreMsg"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+		        android:layout_marginBottom="10dp"
+		        android:text="@string/moreNoResult"
+		        android:gravity="center" />
+		   	
+		    <ListView 
+		        android:id="@+id/listMoreReports"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content" />
+	        
+	    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

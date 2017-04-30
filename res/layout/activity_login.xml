@@ -1,0 +1,72 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/gradient"
+    android:orientation="vertical"
+    android:id="@+id/root"
+    tools:context="menezes.paulo.safe.LoginActivity" >
+
+	<ImageView
+	    android:contentDescription="@string/app_name"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="50dp"
+	    android:layout_gravity="center_horizontal"
+	    android:background="@drawable/logo" />
+
+	<menezes.dd.processbutton.iml.ActionProcessButton
+	    android:id="@+id/googleButton"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="30dp"
+	    android:text="@string/googleButton"
+	    android:textColor="@android:color/white"
+	    android:textSize="14sp"
+	    custom:pb_colorComplete="@color/green_complete"
+	    custom:pb_colorNormal="@color/google"
+	    custom:pb_colorPressed="@color/googleHover"
+	    custom:pb_colorProgress="@color/purple_progress"
+	    custom:pb_textComplete="Success"
+	    custom:pb_textProgress="Loading"
+	    custom:pb_textError="Error"
+	    custom:pb_colorError="@color/red_error" />
+	
+	<menezes.dd.processbutton.FlatButton
+	    android:id="@+id/emailButon"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:text="@string/signInButton"
+	    android:textColor="@color/button_text"
+	    android:textSize="14sp"
+	    custom:pb_colorNormal="@android:color/white"
+	    custom:pb_colorPressed="@color/button_pressed_color" />
+	
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="40dp"
+	    android:layout_gravity="center_horizontal">
+		<TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/entrar"
+		    android:textColor="@android:color/white" />
+		<TextView 
+		    android:id="@+id/signin"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginStart="5dp"
+		    android:text="@string/entrarBold"
+		    android:textColor="@android:color/white"
+		    android:textStyle="bold"/>
+	</LinearLayout>
+	
+</LinearLayout>
